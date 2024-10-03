@@ -1,5 +1,40 @@
 # Changelog
 
+## [0.2.0](https://github.com/laurieboyes/fetch-mock/compare/vitest-v0.1.5...vitest-v0.2.0) (2024-10-03)
+
+
+### ⚠ BREAKING CHANGES
+
+* align vitest implementation with readme
+
+### Features
+
+* align vitest implementation with readme ([fcd27fd](https://github.com/laurieboyes/fetch-mock/commit/fcd27fd434d96cec5c13aa389a0dd6ffd9ce3d8f))
+* hook into vi.unstubAllGlobals() ([26ebc4b](https://github.com/laurieboyes/fetch-mock/commit/26ebc4bcaa8e410718afb66955f36872398bf615))
+* start implementing jest and vitest wrappers ([804f885](https://github.com/laurieboyes/fetch-mock/commit/804f885c16a42a7534ee9fac2e103022482e2af6))
+
+
+### Bug Fixes
+
+* add missing metadata to package.json files ([4ab78b9](https://github.com/laurieboyes/fetch-mock/commit/4ab78b9429a376230da2ce57bd320031c53f06ef))
+* applied same type fixes to vitest wrapper ([817af39](https://github.com/laurieboyes/fetch-mock/commit/817af39040a8573a2be802207b9247f166a4c68b))
+* change export order so default is last ([bc9c41d](https://github.com/laurieboyes/fetch-mock/commit/bc9c41d04609c40e609e672254df5ff1ddf0cad9))
+* force engine to be &gt;=18.11.0 as this fixes an issue in proxying a response ([dde5e6b](https://github.com/laurieboyes/fetch-mock/commit/dde5e6beb9aee103296cf060a9f027bffb4818e9))
+
+
+### Documentation Changes
+
+* add vitest as keyword to vitest package ([9d6636e](https://github.com/laurieboyes/fetch-mock/commit/9d6636eed1c84b2495bdda6e1245b681cd1db4d6))
+* correct mistakes in vitest extensions docs ([d4d00c8](https://github.com/laurieboyes/fetch-mock/commit/d4d00c8d522072257f2ab6c3501a917883f5307f))
+* wrote a README for @fetch-mock/vitest ([d2d1ea3](https://github.com/laurieboyes/fetch-mock/commit/d2d1ea3f14012772edeb77a543384b99b3475e16))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @fetch-mock/core bumped from ^0.7.1 to ^0.8.0
+
 ## [0.1.5](https://github.com/wheresrhys/fetch-mock/compare/vitest-v0.1.4...vitest-v0.1.5) (2024-09-25)
 
 
