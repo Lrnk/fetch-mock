@@ -1,5 +1,67 @@
 # Changelog
 
+## [0.8.0](https://github.com/laurieboyes/fetch-mock/compare/core-v0.7.1...core-v0.8.0) (2024-10-03)
+
+
+### ⚠ BREAKING CHANGES
+
+* remove sendAsJson option
+* export defaultConfig under a better name
+* force a major release due to breaking nature of relative url API changes
+* implemented desired behaviour for dot path matching
+* implemented desired behaviour for protocol relative urls
+* defined route shorthand methods more declaratively
+
+### refactor
+
+* defined route shorthand methods more declaratively ([f42d240](https://github.com/laurieboyes/fetch-mock/commit/f42d240f8ef5c6a270ee8b355ad5177d8fdadf0b))
+
+
+### Features
+
+* allow spying on just one route ([a9638fc](https://github.com/laurieboyes/fetch-mock/commit/a9638fc12f60bfa28e6169a9fa736e2bbdc21a8a))
+* cancel readable streams as effectively as possible ([aa3b899](https://github.com/laurieboyes/fetch-mock/commit/aa3b89989bd223e788db895b03c4fabc56f061d2))
+* export more types from @fetch-mock/core ([2bff326](https://github.com/laurieboyes/fetch-mock/commit/2bff326063a362ea4ce0adc1102130bd1c31ac9e))
+* implemented allowRelativeUrls option ([f32bd6e](https://github.com/laurieboyes/fetch-mock/commit/f32bd6e6ba7aed03ec0fd0c7361097e85c84224a))
+* implemented desired behaviour for dot path matching ([b2fe6f8](https://github.com/laurieboyes/fetch-mock/commit/b2fe6f894b337ed213f55fed47f611acbdecd84f))
+* implemented desired behaviour for protocol relative urls ([06e6260](https://github.com/laurieboyes/fetch-mock/commit/06e62607dbfc7b71936b8a691e37ef9275e7cc11))
+* make query parameters available on CallLog ([8ec57ac](https://github.com/laurieboyes/fetch-mock/commit/8ec57acdc2586102fc94a76f3f3328422e43947f))
+* **matchers:** add missingHeaders ([fcecfe4](https://github.com/laurieboyes/fetch-mock/commit/fcecfe45175e02330efc9d6b2e11466243da5dea)), closes [#716](https://github.com/laurieboyes/fetch-mock/issues/716)
+* moved standalone methods into fetchmock core ([bc4e4ef](https://github.com/laurieboyes/fetch-mock/commit/bc4e4ef2a76acf24c57bfa177e85907c24774bae))
+* remove sendAsJson option ([4b11fc4](https://github.com/laurieboyes/fetch-mock/commit/4b11fc4a5c92c81de8f89b1993a57c2645805ddb))
+* rename restoreGlobal to unmockGlobal ([3ad4241](https://github.com/laurieboyes/fetch-mock/commit/3ad4241f409353ac970cf26b1252b32ea6390208))
+* send content=length header whenever calculable ([ef4c684](https://github.com/laurieboyes/fetch-mock/commit/ef4c684bddb617e95c54217c86b6953637f21f74))
+* started work on @fetch-mock/standalone ([45eadd7](https://github.com/laurieboyes/fetch-mock/commit/45eadd70bdf72e20d118f35b92b4f6fd5a7dbb9f))
+* support multiple url matchers at once ([c83d9f9](https://github.com/laurieboyes/fetch-mock/commit/c83d9f992337eb6ff79f027a7fc2e6316ce36456))
+
+
+### Bug Fixes
+
+* abort request and response bodies ([ec6b47d](https://github.com/laurieboyes/fetch-mock/commit/ec6b47d9d00be1a568ad02af3330384976460f7b))
+* add license file to each package ([9b36f89](https://github.com/laurieboyes/fetch-mock/commit/9b36f892ed19cd381b1f8ebbd94a28773637b9ec))
+* add missing metadata to package.json files ([4ab78b9](https://github.com/laurieboyes/fetch-mock/commit/4ab78b9429a376230da2ce57bd320031c53f06ef))
+* all relative url behaviour is as expected now; ([dc99eb7](https://github.com/laurieboyes/fetch-mock/commit/dc99eb783e64c8c101c9d15fc59cccc7f7ad174d))
+* change export order so default is last ([bc9c41d](https://github.com/laurieboyes/fetch-mock/commit/bc9c41d04609c40e609e672254df5ff1ddf0cad9))
+* correct types so that global optiosn can be passed in to route ([13e1fc6](https://github.com/laurieboyes/fetch-mock/commit/13e1fc64ca3a36f54765d588dc61d44cc92cd413))
+* export defaultConfig under a better name ([268f8a7](https://github.com/laurieboyes/fetch-mock/commit/268f8a7380c8e0f1156a98f6069805fdf35bd7b4))
+* fix core package build ([90bbe76](https://github.com/laurieboyes/fetch-mock/commit/90bbe76ab384ec5cefeb17f19ca06ca386cbbde5))
+* force a major release due to breaking nature of relative url API changes ([6f29db8](https://github.com/laurieboyes/fetch-mock/commit/6f29db8ff79a8c7a50ad03f4c1547d8716ffb298))
+* force engine to be &gt;=18.11.0 as this fixes an issue in proxying a response ([dde5e6b](https://github.com/laurieboyes/fetch-mock/commit/dde5e6beb9aee103296cf060a9f027bffb4818e9))
+* force release of core ([6bf9b87](https://github.com/laurieboyes/fetch-mock/commit/6bf9b87f0598cb5a142d623c6285b0dca6c619d5))
+* force releasing core ([1c8fdfc](https://github.com/laurieboyes/fetch-mock/commit/1c8fdfc62838443f2a5eacf86d84828151d69047))
+* handle all types of BodyInit correctly ([0242ea2](https://github.com/laurieboyes/fetch-mock/commit/0242ea2d6c30e36418f21a37a962fe1cf84c9271))
+* make a more sensible decision about matching body ([0ef50d6](https://github.com/laurieboyes/fetch-mock/commit/0ef50d62ccaa70ea09b693519ddb80d73530b38f))
+* now more spec compliant on exceptions ([ceec07f](https://github.com/laurieboyes/fetch-mock/commit/ceec07f1c8c1be86111b4feaaab76c103885da4d))
+* roll back to glob-to-regexp ([b114124](https://github.com/laurieboyes/fetch-mock/commit/b11412452ed376ab2e20e03a51f0dc1de1dcdb90))
+
+
+### Documentation Changes
+
+* document and test behaviour with multiple missing headers ([88d0440](https://github.com/laurieboyes/fetch-mock/commit/88d0440b814a0f3309f49c30d6c81d899ebc65a6))
+* minor corrections ([d77978a](https://github.com/laurieboyes/fetch-mock/commit/d77978a17825f166f06cbb1bbb911e7fb8790a4a))
+* readme for @fetch-mock/core ([5fd7c5a](https://github.com/laurieboyes/fetch-mock/commit/5fd7c5a1d37e546ab8dd6e173761ae0b8fb43878))
+* wrote a README for @fetch-mock/vitest ([d2d1ea3](https://github.com/laurieboyes/fetch-mock/commit/d2d1ea3f14012772edeb77a543384b99b3475e16))
+
 ## [0.7.1](https://github.com/wheresrhys/fetch-mock/compare/core-v0.7.0...core-v0.7.1) (2024-09-25)
 
 
